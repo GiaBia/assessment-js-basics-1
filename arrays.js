@@ -4,11 +4,14 @@
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
-
+//*since the second indice will not be shown, I set the second one to indice 3 to include the whole array.
+let colorCopy = faveColors.splice(0,3)
+console.log(colorCopy) 
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
+colorCopy.push(`pink`)
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -19,7 +22,9 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
-
+//Same idea as in problem 1 
+let middleNums = numbers.slice(1,4)
+console.log(middleNums)
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -34,3 +39,14 @@ const numbers = [1, 2, 3, 4, 5]
 const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
+let answers = []
+//for loop to loop through the entire array
+// using indexing to access variables inside the array
+// instead of using else if we are just using else since all other numbers would fit the criteria for `small`
+for(let i = 0; i < bigOrSmallArray.length; i++){
+  if(bigOrSmallArray[i] > 100){
+    answers.push(`big`)
+  } else {
+    answers.push(`small`)
+  }
+} console.log(answers)
