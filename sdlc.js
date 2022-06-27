@@ -25,4 +25,6 @@ const design = `This is the third step, where using the SRS the system and softw
 
 const implementation = `This is the fourth step, in which work is divided into units and coding begins.`
 
-co
+const testingIntegration = `This is the fifth step, which is solely dedicated to testing where defects are reported, tracked, corrected, and retested until the standard expected is met to be deployed.`
+
+const maintain = `This is the final step, where maintaining updates, evaluations, and any changes needed to be made after launch take place. `
